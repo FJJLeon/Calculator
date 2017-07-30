@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script type="text/javascript" src="calculate.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        td {
+            background-color: lightskyblue;
+            width: 300px;
+            height: 120px;
+            color: darkslateblue;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .td_other {
+            background-color: navajowhite;
+        }
+    </style>
+</head>
+<body>
+
+<table align="center">
+    <tr>
+        <td class="td_other" colspan="5" id="expression"></td>
+    </tr>
+    <tr>
+        <td class="td_other" colspan="5" id="result"></td>
+    </tr>
+    <tr>
+        <td onclick="append(this)">1</td>
+        <td onclick="append(this)">2</td>
+        <td onclick="append(this)">3</td>
+        <td onclick="append(this)">(</td>
+        <td onclick="append(this)">)</td>
+    </tr>
+    <tr>
+        <td onclick="append(this)">4</td>
+        <td onclick="append(this)">5</td>
+        <td onclick="append(this)">6</td>
+        <td onclick="append(this)">+</td>
+        <td onclick="append(this)">-</td>
+    </tr>
+    <tr>
+        <td onclick="append(this)">7</td>
+        <td onclick="append(this)">8</td>
+        <td onclick="append(this)">9</td>
+        <td onclick="append(this)">*</td>
+        <td onclick="append(this)">/</td>
+    </tr>
+    <tr>
+        <td onclick="append(this)">.</td>
+        <td onclick="append(this)">0</td>
+        <td onclick="backspace(this)">←</td>
+        <td class="td_other" onclick="clear(this)">c</td>
+        <td class="td_other" onclick="equal(this)">=</td>
+    </tr>
+
+</table>
+</body>
+</html>
